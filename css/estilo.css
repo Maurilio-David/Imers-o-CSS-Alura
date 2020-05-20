@@ -1,38 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    background-image: url("https://image.freepik.com/vetores-gratis/fundo-do-site-mosaico-poligonal-abstrato-azul-triangulo_1164-2380.jpg");
-    background-size: auto 100vh;
+    /*background-image: url("https://image.freepik.com/vetores-gratis/fundo-do-site-mosaico-poligonal-abstrato-azul-triangulo_1164-2380.jpg");*/
+    background-color: #e4e5e7;
+  /*Secundaria # e4e5e7
+    destaque #5dbde9*/
+    /*background-size: auto 100vh;*/
     font-family: 'Nunito', sans-serif;
     height: 100vh;
   }
-  
-  .menu {
-    width:800 px; 
-    background-color: white;
-   
+/* Se a tela tiver pelo menos 400 px 
+vai carregar esses estilos*/
+@media (min-width: 400px) {
+body{
+  font-size: 12px;
+}
+}
+/* Se a tela tiver pelo menos 600 px 
+vai carregar esses estilos*/
+@media (min-width: 600px) {
+  body{
+    font-size: 18px;
+  }
+  }
+header{
+    
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div {
+  margin-top: 4em;
+}
+header div p{
+  text-align: center; 
+  margin: 1em;
+  color: #5dbde9;
+}
+header .container {
+  text-align: center;
+}
+@media (max-width: 400px) {
+  header .container img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.menu {
+    background-color: #4764e6 ;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
-  .menu ul{
+.menu ul{
     display: flex;
     justify-content: space-around;
   }
   
-  .menu li{
+.menu li{
     list-style: none;
   }
   
-  a{
+.menu{
+    display: block;
+    padding: 10px 20px;
+  }
+
+.menu li a{
     text-decoration: none;
+    color: #e4e5e7;
+    font-size: 1.1em;
   }
   
-  a:hover{
+a:hover{
     text-decoration: underline;
   }
-  
-  .site-title, 
-  .site-subtitle {
-    color: whitesmoke;
+header div.container{
+  display: block;
+}
+.site-title, 
+.site-subtitle {
+    color:#5dbde9;
     text-align: center;
+    font-size: 2em;
   }
-  .site-subtitle {
+.site-subtitle {
     font-style: italic;
+    line-height: 1.8em;
+  }
+.portfolio {
+  margin-bottom: 3em;
+  padding: 2em;
+}
+.portfolio figure {
+  text-align: center;
+}
+.portfolio h2{
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5em;
+}
+.portfolio .grid{
+  display: grid;
+  margin-top: 2em;
+  gap: 1em;
+  
+}
+@media(min-width: 600px){
+  .portfolio .grid{
+  grid-template-columns: repeat(2, 240px) ;
+  justify-content: center;
+  }
+}
+@media(min-width: 900px){
+  .portfolio .grid{
+  grid-template-columns: repeat(2, 400px) ;
+  justify-content: center;
+  align-content: center;
+  height: calc(100vh - 4em - 48px - 1.5em);
+  }
+}
+@media(min-width: 1200px){
+  .portfolio .grid{
+  grid-template-columns: repeat(4, 280px);
+  }
+}
+.img-portfolio{
+    padding: 2em;
+    height: 250px;
+    width: 250px; 
+  }
+@media(min-width: 900px){
+  .img-portfolio{
+    height: 380px;
+    width: 380px; 
+  }
+}
+@media(min-width: 12000px){
+  .img-portfolio{
+    height: 280px;
+    width: 280px; 
+  }
+}
+section{
+    height: 50vh;   
+}
+section h2{
+    text-align: center;
   }
