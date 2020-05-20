@@ -13,6 +13,7 @@ body{
     font-family: 'Nunito', sans-serif;
     height: 100vh;
   }
+
 /* Se a tela tiver pelo menos 400 px 
 vai carregar esses estilos*/
 @media (min-width: 400px) {
@@ -26,10 +27,11 @@ vai carregar esses estilos*/
   body{
     font-size: 18px;
   }
+  
   }
 header{
     
-    height: 70vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,18 +140,13 @@ header div.container{
   }
 @media(min-width: 900px){
   .img-portfolio{
-    height: 380px;
-    width: 380px; 
+    height: 300px;
+    width: 300px; 
   }
 }
-@media(min-width: 12000px){
-  .img-portfolio{
-    height: 280px;
-    width: 280px; 
-  }
-}
+
 section{
-    height: 50vh;   
+    height: auto;   
 }
 section h2{
     text-align: center;
