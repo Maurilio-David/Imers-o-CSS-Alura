@@ -70,6 +70,9 @@ header .container {
     width: 100%;
     border-radius: 1em;
   }
+  .sobre{
+    height: 1150px;
+  }
 }
   
 .menu ul{
@@ -148,8 +151,13 @@ header div.container{
   grid-template-columns: repeat(2, 400px) ;
   justify-content: center;
   align-content: center;
-  
   }
+  header,
+.sobre,
+.portfolio
+.contato{
+  height: 700px;
+}
 }
 @media(min-width: 1200px){
   .portfolio .grid,
@@ -157,12 +165,7 @@ header div.container{
   grid-template-columns: repeat(4, 280px);
   }
 }
-header,
-.sobre,
-.portfolio
-.contato{
-  height: 650px;
-}
+
 .img-portfolio{
     padding: 2em;
     height: 250px;
