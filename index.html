@@ -2,14 +2,11 @@
 <html lang="pt-br">
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
-<link href="css/estilo.css" rel="stylesheet">
-<link href="bootstrap/bootstrap.min.css" rel="stylesheet">    
+<link href="css/estilo.css" rel="stylesheet">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=devide-width, initial-scale=1">
     <title>Maurílio David Conceição</title>
     
     
@@ -20,12 +17,11 @@
     
   <nav class="menu">
     <ul>
-      <li><a  href="#">Sobre</a></li>
-      <li><a  href="#">Projetos</a></li>
-      <li><a  href="#">Contato</a></li>
+      <li><a  href="#sobre">Sobre</a></li>
+      <li><a  href="#projetos">Projetos</a></li>
+      <li><a  href="#contato">Contato</a></li>
     </ul>
   </nav>
-  
   <div>
     <div class="container">
     <img src="./img/perfil.jpg" 
@@ -34,12 +30,23 @@
     </div>
     <h1  class="site-title">Maurílio David Conceição</h1>
     <h2 class="site-subtitle">jr. frontend developer</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  
-</div>
+  </div>
 </header>
 
-<section class="portfolio">
+<section id="sobre" class="sobre">
+
+  <article >
+    <p><br></p>
+    <p><b>Olá!</b></p>
+    <p>Meu nome é <i>Maurílio David</i>, tenho 24 anos, moro em Salvador/BA e sou estudante de Análise e Desenvolvimento de Sistema.<br /> Desde muito novo sou apaixonado por tecnologia e tenho certeza que nasci para trabalhar nessa área.</p>
+    <p>Na minha infância quando eu ganhava aqueles relógios digitais bonitinhos que todas as crianças adoram, eu tinha mania de desmontar todo o relógio para saber como ele funcionava por dentro e depois montava novamente. Confesso que algumas vezes eu tive que ir chorar no canto, pois minha brincadeira não tinha dado certo e eu acabava quebrando o relógio, porém em algumas oportunidades eu pude consertar o meu relógio e o do meu irmão. Nisso fui crescendo e me capacitando, hoje eu não me arrisco em abrir um relógio, mas faço manutenção em computadores, notebooks, smartphones e tablets.</p>
+    <p>Na vida acadêmica eu passei por alguns cursos e faculdades até descobrir o que realmente queria fazer. Comecei fazendo Engenharia da Computação, mas no meio do caminho optei por mudar para Redes de Computadores pois havia começado a estagiar. Porém, logo no segundo semestre percebi que não tinha feito uma boa escolha (nada contra o curso!), pois apesar do conhecimento adquirido em redes no estágio, meu caminho apontava para outra direção. Foi então que fiz minha última mudança para o curso de ADS, onde descobri que minha paixão é desenvolver sistemas. Sentir o cérebro processando as lógicas de programação e no final ver o programa rodando, com todas funcionalidades esperadas, não tem preço e é realmente muito prazeroso.</p>
+  </article>
+
+</section>
+
+<section id="projetos" class="portfolio">
+  <p><br></p>
   <h2 >Projetos</h2>
   <div class="grid">
     <figure>
@@ -59,8 +66,33 @@
       <figcaption>Projetos pessoais</figcaption>
     </figure>
   </div>
+    
 </section>
 
+<section id="contato" class="contato">
+  <p><br></p>
+  <h2 >Contatos</h2>
+  <div class="grid">
+    <figure>
+      <a href="https://www.linkedin.com/in/mauríliodavid/" target="_blank"><img class="img-portfolio" src="./img/linkedin.png" alt="linkedin "></a>
+      <figcaption>Linkedin</figcaption>
+    </figure>
+    <figure>
+      <a href="https://github.com/Maurilio-David/MaurilioDavid" target="_blank"> <img class="img-portfolio" src="./img/github-sign.png" alt=">Git"></a>
+      <figcaption>GitHub</figcaption>
+    </figure>
+    <figure>
+     <a href="mailto:maurilio_david@hotmail.com" target="_blank"> <img   class="img-portfolio" src="./img/email.jpg" alt="Email"></a>
+      <figcaption>E-mail</figcaption>
+    </figure>
+    <figure>
+      <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5571992197535" target="_blank"><img class="img-portfolio" src="./img/telefone.jpg" alt=">Git"></a>
+      <figcaption>Whatsapp</figcaption>
+    </figure>
+  </div>
+
+
+</section>
 
 </body>
 </html>
